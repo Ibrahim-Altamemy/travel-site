@@ -1,0 +1,27 @@
+@mixin atSmall($size){
+	/* laqrge than 530 */
+	@media (min-width: 530px){
+		font-size: $size;
+	}
+}
+
+@mixin atMedium($size){
+	@media (min-width:800px){
+		font-size: $size;
+	}
+}
+
+
+@mixin atLare($size){
+	@media (min-width:1200px){
+		font-size: $size;
+	}
+}
+
+@mixin clearfix(){
+	&::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

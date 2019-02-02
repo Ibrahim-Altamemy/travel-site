@@ -1,0 +1,36 @@
+.row{
+    /* all width 100% / 12 = 8.333 */
+    @include clearfix();
+
+    &--gutters{
+        margin-right: -65px;
+    }
+
+    &--gutters > div{
+        padding-right: 65px;
+    }
+
+    
+    /* At medium size */
+    @media (min-width:800px){
+		&__medium-4{
+            float: left;
+            width: 33.333%;
+            padding-right: 15px;
+        }
+
+        &__medium-4--larger{
+            width: 37%;
+        }
+    
+        &__medium-8{
+            float: left;
+            width: 66.666%;
+        }
+
+        &__medium-8--smaller{
+            width: 63%;
+        }
+	}
+
+}
